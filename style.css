@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-
+:root{
+    --bg: #F1D1B5;
+    --keys: #305F72;
+    --buttons: #000;
+}
 
 body{
     justify-content: center;
@@ -14,7 +18,7 @@ body{
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background-color: #F1D1B5;
+    background-color: var(--bg);
 }
 
 
@@ -22,22 +26,22 @@ body{
 .container{
     height: auto;
     justify-content: space-between;
-    border: 2px solid rgb(42, 0, 0);
-    background-color: #305F72;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--keys);
     border-radius: 2%;
 }
 
 #screen{
-    background-color: #305F72;
+    background-color: var(--keys);
     height: 100px;
     margin-bottom: 10px;
     margin-top: 10px;
     color: rgb(255, 255, 255);
 }
 
-#screen:hover{
+/* #screen:hover{
     background-color: #376577;
-}
+} */
 
 #display{
     float: right;
@@ -85,7 +89,7 @@ button{
     width: 24%;
     height: 90px;
     margin-left:3px;
-    background-color: #F18C8E;
+    background-color: var(--bg);
     color: white;
     font-size: 24px;
     margin-bottom: 5px;
@@ -94,17 +98,18 @@ button{
 }
 
 .outer{
-    background-color: #305F72;
-
+    background-color: var(--keys);
+    font-weight: bolder;
 }
 
 button:hover{
     background-color: #000000;
     cursor: pointer;
+    color: white;
 }
 button:active{
-    background-color: #F1D1B5;
-    color: black;
+    background-color: var(--keys);
+    color: var(--bg);
 }
 
 
@@ -113,8 +118,8 @@ button:active{
         width: 24%;
         height: 90px;
         margin-left: 1px;
-        background-color: #F18C8E;
-        color: white;
+        background-color: var(--bg);
+        color: var(--buttons);
         font-size: 24px;
         margin-bottom: 5px;
         border-radius: 4%;
@@ -130,6 +135,7 @@ button:active{
     height: 50px;
     width: 140px;
     background-color: black;
+    color: antiquewhite;
     border-radius: 5%;
 }
 
